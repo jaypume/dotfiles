@@ -6,6 +6,7 @@
  (expand-file-name "lisp" user-emacs-directory))
 ;; 加载theme文件夹
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'monokai t)
 ;; 下面每一个被require的feature都对应一个lisp/目录下的同名
 ;; elisp文件，例如init-utils.el、init-elpa.el
 ;;(require 'init-utils)   ;; 为加载初始化文件提供一些自定义的函数和宏
